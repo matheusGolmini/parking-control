@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "497e68a2-7a01-4143-a0d1-4a4367d87d0d",
+		"name": "Parking Control",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7958474"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/parking-spot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parkingSpotNumber\": \"2058\",\n    \"licensePlateCar\": \"RRS8562\",\n    \"brandCar\": \"audi\",\n    \"modelCar\": \"q5\",\n    \"colorCar\": \"black\",\n    \"responsibleName\": \"Carlos Daniel\",\n    \"apartment\": \"305\",\n    \"block\": \"B\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
